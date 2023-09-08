@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: raleway;
+}
+body{
+    min-height: 100vh;
+    background: url("image/polygon-scatter-haikei (4).svg");
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 99;
+    background:transparent;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation .navl {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(99, 99, 102);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navl{
+margin-top: 20px;
+}
+.navigation .navl::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background:white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition:transform .5s;
+} 
+.navigation .navl:hover:after{
+     transform-origin:left ;
+     transform: scaleX(1);
+}
+.navigation .btnlogin-popup{
+    width: 120px;
+    height: 50px;
+    background:transparent;
+    border: 2px solid rgb(71, 66, 66);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(68, 65, 65);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+
+}
+.navigation .btnlogin-popup:hover{
+    background: rgb(44, 43, 43);
+    color:#cacdcf;
+}
+
+.container_notice{
+    margin-top:100px ;
+    margin-left: 350px;
+}
+
+
+h1 {
+    background:transparent;
+    color: rgb(75, 75, 75);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the form container */
+.form {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #f3f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style form inputs */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+/* Style form button */
+button {
+    background-color:rgb(63, 61, 87);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(49, 46, 95);
+}

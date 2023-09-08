@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: raleway;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("image/polygon-scatter-haikei (4).svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background:rgb(253, 253, 253) ;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+  
+}
+h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center ;
+}
+
+.form-control{
+    position: relative;
+    width: 80%;
+    height: 30px;
+    border-bottom: 2px solid #162938;
+    margin: 20px 0;
+    margin-left: 5px;
+}
+
+.col-form-label{
+    margin-top: 10px;
+
+}
+
+.buttons{
+    display: flex;
+    
+}
+
+.d-grid{
+    margin-left:80px;
+    margin-top: 20px;
+}
+
+.btn-primary{
+    margin-bottom:20px ;
+    width: fit-content;
+    padding: 7px 15px;
+    
+    font-weight: 700;
+    font-size: large;
+    color: rgb(49, 46, 95);
+    border: none;
+    border-radius: 10px;
+    font-family: raleway;
+    background: rgb(164, 164, 170);
+    text-decoration: none;
+}
+
+.btn-primary:hover{
+  background:rgb(49, 46, 95);
+  color:rgb(164, 164, 170) ;
+
+}
+.btn-outline-primary{
+   
+    width: fit-content;
+    padding: 7px 15px;
+    font-weight: 700;
+    font-size: large;
+    color: rgb(49, 46, 95);
+    border: none;
+    border-radius: 10px;
+    font-family: raleway;
+    background: transparent;
+    text-decoration: none;
+}
